@@ -17,6 +17,12 @@ namespace ServerdanClient_Nuraini__072
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            button2.Enabled = false;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
@@ -27,5 +33,18 @@ namespace ServerdanClient_Nuraini__072
             Server server = new Server();
             server.OnServer();
         }
+
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            button2.Enabled = false;
+            label3.Text = "Klik ON Untuk Menjalankan Server";
+            label2.Text = "Server OFF";
+
+            Server server = new Server();
+            server.OffServer();
+        }
     }
 }
+

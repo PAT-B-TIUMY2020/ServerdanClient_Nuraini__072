@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ServiceMtk-P1-20180140072">
+      <HintPath>..\..\ServiceMtk-P1-20180140072\ServiceMtk-P1-20180140072\bin\Debug\ServiceMtk-P1-20180140072.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
